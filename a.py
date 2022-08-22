@@ -8,7 +8,7 @@ def get_list(lang):
 	requests.packages.urllib3.disable_warnings() 
 	r = requests.get("https://www.codegrepper.com/code-examples/"+lang,verify=False)
 	soup = bs4.BeautifulSoup(r.text,'html.parser')
-	f = open(lang+'_list.txt','w',encoding='utf-8')
+	f = open('lists/'lang+'_list.txt','w',encoding='utf-8')
 
 	for ul in soup.select("ul[class='one-third']"):
 		for li in ul.find_all("li"):
@@ -23,7 +23,7 @@ def get_snippet(line):
 	
 def choose_snippets(lang):
 	requests.packages.urllib3.disable_warnings()
-	f = open(lang+"_list.txt","r",encoding="utf-8")
+	f = open("snippets/"+lang+"_list.txt","r",encoding="utf-8")
 	lines = f.readlines()
 	snippet_list = []
 	for line in lines:
@@ -42,7 +42,7 @@ def choose_snippets(lang):
 			print("#"*50)
 
 def save_snippet(lang,snippets):
-	f = open(lang+"_snippets.json","w")
+	f = open("snippets/"+lang+"_snippets.json","w")
 	snippets = json.dumps(snippets,indent=4)
 	f.write(snippets)
 	f.close()
