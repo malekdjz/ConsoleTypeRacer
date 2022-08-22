@@ -1,0 +1,534 @@
+rustlang error: linker `link.exe` not found
+rust allow unused
+rust get current directory
+rust lang sleep
+return function rust
+how to exit the program rust
+read file contents in rust
+check if a file exists rust
+random number generator in rust
+rust take user input
+rust get command line arguments
+append to file rust
+how to index a string in rust
+exit program rust
+rust random number in range
+rust sort vector of number descending
+convert string to i32
+rust convertinging string to int
+cargo insall cargo-cahe this version of Cargo is older than the `2021` edition, and only supports `2015` and `2018` editions.
+rust string to char array
+read file in rusr
+how to clear the console rust
+convert string to i32 rust
+how to cahce clean cargo
+bevy bundles
+get random enum rust
+rust create folder
+bevy window descriptor
+rust vec cannot move
+deconstruct hashmap into vecs rust
+rust create bigint from string
+rust field is never read remove warning
+rust bevy query option
+sort a vec<f32> rust
+rust print array
+array as a parameter rust
+whats the difference between Iter and into_iter rust
+how to read from stdin rust
+rust dictionary
+read file buffer rust
+bevy assets image as sprite
+how to create a string of n characters rust
+print number as binary in rust
+rust absolute value
+create file rust
+rust reverse for loop
+char byte size rust
+rust implement debug for struct
+rust sleep
+making a web server in rust
+rust copy trait
+closure rust
+rust filtering a vector example
+..= in rust
+rust u8 to string
+rust request get headers
+rust nested loop
+rust nesting and labels loop
+rust nesting loops
+rust size of type
+ignore #[warn(dead_code)]
+remove file rust
+how to split a string by spaces rust
+how to concatenate two &str in rust
+how to open a file rust
+rust .trim()
+rust convert integer to string
+rust loop n times
+linking with `link.exe` failed: exit code: 1189
+rust timestamp
+how to create a window in rust lang
+rust empty vector
+rust get items in a list with index and value
+rust check if key in hashmap
+How to know the data type in rust
+rust type of
+rust lang print in hex
+rust get crate version
+rust .0
+get length of string rust
+actix web hello world
+actix web
+rust reverse an array
+rust how to access elements of an array
+add element to vec rust
+rust setup in vim
+rust check valid email address using regex
+rust value of pi
+assert rust
+rust sum vector
+2d vector rust
+rust simple search and replace regex
+host rust server
+rust string contains
+rust if string in text
+create thread in rust
+rustlang string
+encode base64 rust
+rust string from bytes
+how to create a vector in rust
+rust javascript
+rust string slice
+rust concatenate strings
+convert number to string rust
+create empty string rust
+rust string split
+read file rust
+rust implement clone for struct
+rust multiline comment
+rust read lines from stdin and return a vec
+rust enum to string
+rust struct
+rust repeat character x times
+rust copy to clipboard
+debug rust
+rust square root
+rust hashmap
+rust lang rand between
+rust in a string, replace multiple spaces with single space
+rust lang display
+rust  convert a string (with decimals) to a floating point number.
+calculator in rust
+rust char uppercase
+rust struct default values
+rust trait
+rust download
+const generics in rust
+rust test std out
+bevy input
+rust hashset
+for_each in rust
+rust hello world
+reverse vec rust
+read line rust
+rust colorful terminal
+rust char array
+how to implement the copy trait for a struct rust
+sum all elements of array rust
+transpose a matrix
+get length of vector rust
+ndarray rust
+rust const string
+uuid from string rust
+rust round 2 decimal places
+enum in rust
+rust vec to array
+how to export a macro in rust
+rust lang start a new project
+Split text on several separators
+rust iterate vector backwards
+new rust project with cargo
+struct in rust
+String to int in Rust
+Pushing Array values to a Vector in Rust
+rust lang function is never used: rustc(dead_code)
+rust•armanriazi•error•cannot be formatted using `{:?}`
+rust•armanriazi•thread•unsafe
+armanriazi•rust•concept•superpowers
+rust String to &str
+armanriazi•rust•vec•some•pop
+armanriazi•rust•error
+rust init vec with values
+rust error handling
+hello world latex
+sleep in rust
+armanriazi•rust•vec
+armanriazi•rust•error•E0282•type annotations needed
+armanriazi•rust•pattern•design•interior•mutability•refcell
+count matches with regex
+rust import file
+how to make a sorting algorithim rust
+rust get input on the same line as question
+split text on multiple separators and put into a list
+rust concat
+rust array unique
+armanriazi•rust•Rc
+rust regex split
+rust html parser
+rust read splited string as vector
+rust•armanriazi•borrowchecker•lifetime
+armanriazi•rust•pattern•design•interior•mutability
+Project Euler #1 Multiples of 3 or 5
+rust argv
+armanriazi•rust•smartpointer•box•cons
+rust string to f64
+find last element of vec rust
+closure type in rust
+rust cargo error no override and no default toolchain set
+armanriazi•rust•smartpointer•box
+concat string rust
+create a new rust project folder with cargo
+get the temp directory rust
+split a line on whitespace
+Remove first and last letter of string
+input output rust
+rust number squared
+use module within another module rust
+where in Rust
+rust create directory if not exists
+error handling rust
+split rust
+how to convert string to i32 in rust
+rust comment types
+rust option
+How to print out a variable in rust
+how to check for os in rust
+check if a string contains consecutive letters that occur only once
+rustlang char array
+rust match enum
+rust global variables
+trait in rust
+custom errors rust
+multithreading rust example
+char to upper case rust
+rust u32 to f64
+rust function parameters
+rust function
+rust initialize empty array
+run or compile rust code
+rust option get value
+regex in rust
+armanriazi•rust•syntax•names
+length of vector rust
+rust language
+rust new tuple
+rust modulus
+How to make Rust panic ?
+rust lang enum
+string and str to string rust
+does rust support classes
+class in rust
+rgb to hex conversion
+rust new vec
+how to check rust version
+rust compiler
+check rust version command line
+armanriazi•rust•stack•vs•heap
+rust compiler error
+rust 	 Currying change a multiple argument function into a function where some of the arguments are preset.
+armanriazi•rust•reference•vs•pointer
+rust How to use if let statement with conditions?
+armanriazi•rust•concept•oop•state•pattern
+armanriazi•rust•error•[E0596]: cannot borrow `x` as mutable, as it is not declared as mutable
+rust•armanriazi•static•str
+minimum and maximum numbers for various integer types
+rust print i8
+rust•armanriazi•type•wraper
+armanriazi•rust•interior-mutability•cell
+armanriazi•rust•comparison•iter•vs•for
+rust multiplication table for a number
+armanriazi•rust•error•[E0040]: explicit use of destructor method
+rust•armanriazi•loop•listen
+Greatest common divisor iterative
+loop label in rust
+last vec item rust
+armanriazi•rust•generic•monomorphization
+allow dead code
+rust•armanriazi•cast•try_into•unwrap
+armanriazi•rust•trait•bound
+rust•armanriazi•error•cannot be formatted with the default formatter
+armanriazi•rust•error•[E0369]: binary operation `>=` cannot be applied to type `T`
+rust lang expected item found let
+optional arguments rust
+rust create hashmap from delimited data in string
+armanriazi•rust•thread•spawning•join
+rust list comprehension
+armanriazi•rust•unsafe•trait
+rust init vector with range
+rust missing lifetime specifier
+rust•armanriazi•borrowchecker•ownership
+rust create derive trait
+for loop
+armanriazi•rust•panicked•'index out of bounds: the len is 0 but the index is 0'
+armanriazi•rust•error•E0501•cannot borrow `x` as immutable because previous closure requires unique access
+armanriazi•rust•reference•dangle
+armanriazi•rust•thread•rayon•join•workstealing
+armanriazi•rust•unsafe•function•or•method
+armanriazi•rust•mem•leak
+loop rust
+armanriazi•rust•thread•multi•arc•mutex
+armanriazi•rust•mem•deallocating
+rmarmanriazi•rust•concept•polymorphism
+rust program name
+armanriazi•rust•static•vs•cons
+what is () in rust
+blank struct rust
+rust•armanriazi•let•const
+running sum of 1d array
+reverse a string with runes
+armanriazi•rust•error•[E0046]: not all trait items implemented, missing: `summarize_author`
+rust cube root
+armanriazi•rust•concept•memoization•lazy•evaluation
+armanriazi•rust•error•[E0614]:  cannot be dereferenced
+rust•armanriazi•modified•data•by•compiler•cast•number•i32•to•u8
+armanriazi•rust•concept•dst•or•unsizedtype
+armanriazi•rust•code•string•to•u128
+packet sniffing with rust
+armanriazi•rust•error•[E0782]: trait objects must include the `dyn` keyword
+get function name rust
+Vector with multiple types in rust
+armanriazi•rust•error•error[E0382]: borrow of moved value: `val` ... thread
+Repeat the given string exactly n times
+initialize empty vec in rust
+greater than equal to rust
+rust swap vector elements
+rust•armanriazi•concept•zero•cost•abstractions
+armanriazi•rust•concept•coherence
+armanriazi•rust•closures•anonymous•lambda•loosely
+decimal in rust
+armanriazi•rust•concept•mangling
+rust•armanriazi•error•[E0277]: `Rc<Mutex<i32>>` cannot be sent between threads safely `Rc<Mutex<i32>>` cannot be sent between threads safely
+find prime numbers with the sieve of Eratosthenes
+rust
+rust named tuple
+rust 	 jump back to an outer loop
+armanriazi•rust•dereferencing
+armanriazi•rust•concept•jargon
+bevy disable plugin
+rust•armanriazi•test•mock
+rust•armanriazi•slice•vs•char•vec
+how to get public addres from private key solana cli
+Counting bits Kernighan style
+rust file extension
+armanriazi•rust•nestedtypes
+slice indices are of type usize rust
+Rust Options Some None using closures
+rust comments
+armanriazi•rust•concept•unrolling
+update a value in hashmap in rust
+rust get char at index
+armanriazi•rust•collection•hashmap•avoid_of_duplicate
+rust currying, preset some arguments
+armanriazi•rust•type•recursive
+rust•armanriazi•trait•PartialEq
+armanriazi•rust•concept•pattern•newtype
+armanriazi•rust•t•opt•?
+armanriazi•rust•error•E0308•mismatched types expected type parameter ``, found associated type
+macro_rules!
+armanriazi•rust•thread
+How to pass a string literal
+armanriazi•rust•trait•object•safe
+rust-analyzer tab space
+rust convert binary data into ASCII text using Base64 RFC 4648.
+armanriazi•rust•error•[E0106]: missing lifetime specifier  --> src/main.rs:5:20   | 5 |     fn dangle() -> &i32 { // dangle returns a reference to a String   |                    ^ expected named lifetime parameter
+find smallest number in vec rust
+armanriazi•rust•thread•strateges
+armanriazi•rust•unsafe•safeabstraction
+rust•armanriazi•error•thread 'main' has overflowed its stack fatal runtime error: stack overflow
+rust•armanriazi•capacity•reserve
+rust case
+armanriazi•rust•error•already borrowed: BorrowMutError
+how to check if a thing is in a vector in rust
+overwritting print on same line rust
+armanriazi•rust•error•E0502•cannot borrow `s` as mutable because it is also borrowed as immutable
+rust convert floating point number, to a string, with decimal digits.
+armanriazi•rust•mem•doublefree
+Rust Multithreading with a Vector of different functions
+armanriazi•rust•error•E0277•the trait bound `` is not satisfied
+armanriazi•rust•rc•vs•refcell
+rust•armanriazi•generic
+armanriazi•rust•static
+check if an item is in vec in rust
+Create and populate a 2d vector
+rust•armanriazi•refactor
+rust array literal
+armanriazi•rust•trait•external•implement•coherence•orphan
+armanriazi•rust•error•E0220•associated type `` not found for `Self`
+armanriazi•rust•function•vs•closure
+rust sum and average of number list
+armanriazi•rust•smartpointer•deref•coercion
+rust•armanriazi•concept•nan
+do stashes decay rust
+rust vec of generics types
+primitive data types in rust
+$sce trust url
+char is digit rust
+rust match wildcard
+rust iterate over split
+get os name rust
+rust swap two values
+armanriazi•rust•borrowchecker•lifetime•struct
+what does rhs mean rust
+armanriazi•rust•comparison•generic•associated type
+rustlang how to edit project names
+rust•armanriazi•concept•semantic
+read file in rust bufreader
+armanriazi•rust•error•E0277•`Point<{integer}, {float}>` cannot be formatted using `
+convert path to pathbuf
+armanriazi•rust•error•[E0368]: binary assignment operation `+=` cannot be applied to type `T`
+rust lang unresolved import
+armanriazi•rust•orphan•rule
+armanriazi•rust•thread•spawning
+Find the next smaller positive integer containing the same digits
+armanriazi•rust•unsafe•static
+execution duration
+rust string interpolation
+get last index of string rust
+Read a floating point number from stdin
+rust Pause execution for several seconds
+armanriazi•rust•concept•datarace•rustaceans
+armanriazi•rust•error•E0277•the size for values of type `str` cannot be known at compilation time
+armanriazi•rust•unsafe•rawpointer
+rust•armanriazi•error•[E0596]: cannot borrow `self.` as mutable, as it is behind a `&` reference
+rust•armanriazi•osstring•vs•path
+rust•armanriazi•type•wraper•mutable
+pause rust
+rust sort vec of f64
+armanriazi•rust•error•E0615•attempted to take value of method `collect` on type
+armanriazi•rust•trait•blanket
+rust what does the double colon mean?
+hwllo world in rust
+rust count occurrences of a substring
+declare an array with signle value Rust
+armanriazi•rust•error•returning this value requires that `'1` must outlive `'static`
+Transpose matrix, pass-by-reference to function
+rust•armanriazi•trait
+armanriazi•rust•collection•hashmap•key•modify
+how to get text from a file and store it in a variable rust
+rust vector insert
+unwrap_or_else in rust
+rust month to quarter
+armanriazi•rust•error•[E0072]: recursive type `List` has infinite size  --> src/main.rs:3:1   | 3 | enum List {   | ^^^^^^^^^ recursive type has infinite size
+rust how to make print happen before asking for input
+armanriazi•rust•refactor•flowcontrol•match•unwrap_or_else
+rust the size for values of type `str` cannot be known at compilation time\nthe trait `Sized` is not implemented for `str`
+armanriazi•rust•error•E0605•non-primitive cast
+Ways to make a sum of squares calculation
+rust count distinct elements in list
+armanriazi•rust•thread•channel
+rust variables in println
+rust•armanriazi•borrowchecker•borrow
+sort reverse rust
+Find unique element in array where all other elements occur 3 times, uses boolean logic
+create a rust project Inside the folder
+rust empty character literal
+rust ceil
+armanriazi•rust•rc•vs•arc
+armanriazi•rust•unsafe•extern
+rust enum anonymous struct
+rust•armanriazi•thread•sync•sharedstate•mutex
+rust•armanriazi•method
+armanriazi•rust•error•the trait `Binary` is not implemented for `f64`
+rust absolute path
+rust  concurrent execution of f with parameter i. Tasks are independent and don't return any value.
+armanriazi•rust•copy•clone•deeply•shallow
+rust `cfg` which is always true / false
+armanriazi•rust•concept•dynamic•dispatch
+armanriazi•rust•smartpointer•box•vs•rc•vs•refcell
+rust•armanriazi•strring•vs•str
+get value from option rust
+stringify! in rust
+armanriazi•rust•clone•vs•copy
+armanriazi•rust•interior-mutability•vs•inherited-mutability
+armanriazi•rust•ref•move
+rust using regex in if statement
+armanriazi•rust•trait•where
+rust how to create array with the same value
+armanriazi•rust•error•E0434•can't capture dynamic environment in a fn item
+rust from floating point to money
+armanriazi•rust•lifetime•drop
+rust•armanriazi•iterator•index•avoid
+control flow rust
+sort_by in rust
+Take two integers, return the quotient and remainder, divmod
+armanriazi•rust•error•[E0308]: mismatched types expected integer, found floating-point number
+rust enter number from keyboard / stdin
+armanriazi•rust•borrowchecker•lifetime•static
+what does lhs mean rust
+rust•armanriazi•lifetime•unsafe•destructor
+armanriazi•substrate•call•dispatchable•func#ensure_signed#frame_system
+armanriazi•rust•error•[E0507]: cannot move out of `self.step` which is behind a mutable reference    self.curr += self.step;
+enum rust
+armanriazi•rust•thread•spawin•move•capture
+rust return the result with trait exit status
+armanriazi•rust•union
+rust fill vector with range
+rust undefined size array
+rust•armanriazi•concept•borrowchecker
+armanriazi•rust•binding•match
+armanriazi•rust•error•[E0106]: missing lifetime specifier  --> src/main.rs:5:16   | 5 | fn dangle() -> &String {   |                ^ expected named lifetime parameter
+armanriazi•rust•unsafe•comparison•references•smartpointers•rawpointer
+rust•armanriazi•error•panicked•at 'already borrowed: BorrowMutError'
+rust•armanriazi•error•panicked•thread 'main' panicked at 'attempt to subtract with overflow
+rust initialize struct
+floor float rust
+armanriazi•rust•type•wrapper•vs•clone
+how to create an integer in rust
+rust calculate every root
+armanriazi•rust•error•E0277•can't compare `&{
+rust get items in a list
+armanriazi•rust•string
+rust error: failed to run custom build command for python3-sys
+rust Clean way to get Option::unwrap_or_else behaviour with an Option<&T>
+armanriazi•rust•oop
+rust spinning rod animation in text
+armanriazi•rust•box•vs•refcell
+rustdoc
+lifetime may not live long enough
+rust•armanriazi•unwrap
+key value in for loop rust
+rust loop vector by size
+rust run tests without cargo
+armanriazi•rust•error•E0308•mismatched types
+rust BMI
+rust closeure
+tcp listener rust
+gentoo rust stdlib
+armanriazi•rust•error•cannot use the `?` operator in a function that returns `()`
+rust tuple vs vec
+search in dir rust
+set interval Rust
+armanriazi•rust•thread•recv•try_recv
+armanriazi•rust•trait•objectsafe•vs•nonobjectsafe
+rust•armanriazi•error•value used here after move
+return tuple or null
+cargo initialization
+rust lang underscore
+rust vector join to string
+armanriazi•rust•unsafe•extern•mangling
+rust•armanriazi•error•[E0382]: use of moved value: `counter` value moved into closure here, in previous iteration of loop
+rust for loop
+how to make map in rust language
+rust vec length
+rust write to file
+rust range step
+rustlang get substring
+how to make a rust server
+rust lang server
+sort a vector rust
+string from float rust
+convert i32 to usize rust
+rust find type
+rust random float between 0 and 1
+rust bevy states

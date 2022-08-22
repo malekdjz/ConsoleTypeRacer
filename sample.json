@@ -1,0 +1,14 @@
+
+{
+    "samples": [
+        "Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();\n\n// the screen height\nscreenSize.getHeight();\n\n// the screen width\nscreenSize.getWidth();",
+        "--module-path /path/to/javafx-sdk-15.0.1/lib --add-modules javafx.controls,javafx.fxml",
+        "//Add this to app manifest\n<uses-permission android:name=\"android.permission.INTERNET\" />",
+        "%LocalAppData%\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang",
+        "%LocalAppData%\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang",
+        "/scoreboard objectives add Deaths deathCount\n/scoreboard objectives setdisplay list Deaths",
+        "// Vibrate for 150 milliseconds\nprivate void shakeItBaby() {\n    if (Build.VERSION.SDK_INT >= 26) {\n        ((Vibrator) getSystemService(VIBRATOR_SERVICE)).vibrate(VibrationEffect.createOneShot(150, VibrationEffect.DEFAULT_AMPLITUDE));\n    } else {\n        ((Vibrator) getSystemService(VIBRATOR_SERVICE)).vibrate(150);\n    }\n}\n",
+        "//Add the library in app gradle\nimplementation 'com.android.support:multidex:1.0.3'\n\n//Add this to the default config in the app gradle\nmultiDexEnabled true\n  \n//If this still doesn't work, consider adding this name into the android manifesto\nandroid:name=\".MyApplication\"",
+        "\t\t<dependency>\n\t\t\t<groupId>org.springframework.boot</groupId>\n\t\t\t<artifactId>spring-boot-starter-security</artifactId>\n\t\t</dependency>\n\t\t<dependency>\n\t\t\t<groupId>org.springframework.security</groupId>\n\t\t\t<artifactId>spring-security-test</artifactId>\n\t\t\t<scope>test</scope>\n\t\t</dependency>"
+    ]
+}
