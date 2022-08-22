@@ -37,7 +37,7 @@ def random_snippet(json_string):
 ##########################################################################################
 
 def open_json(lang):
-	path = lang+"_snippets.json"
+	path = "snippets"+lang+"_snippets.json"
 	try:
 		f = open(path,"r")
 	except:
