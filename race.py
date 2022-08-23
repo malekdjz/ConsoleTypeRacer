@@ -17,7 +17,6 @@ def compare_char(snippet,index):
 		else:
 			return False,False
 
-##########################################################################################
 
 def typing(snippet,y,x):
 	curses.noecho()
@@ -41,20 +40,17 @@ def typing(snippet,y,x):
 				stdscr.refresh()
 				break
 
-##########################################################################################
 
 def char_counter(t,index):
 	past_time = time.time() - t + 0.1
 	chars_per_sec = index/past_time
 	return chars_per_sec
 
-##########################################################################################
 
 def random_snippet(json_string):
 	snippet = str(random.choice(json_string))
 	return snippet
 
-##########################################################################################
 
 def open_json(lang):
 	path = "snippets/"+lang+"_snippets.json"
@@ -67,7 +63,6 @@ def open_json(lang):
 		json_string  = json.load(f)
 		return json_string
 
-##########################################################################################
 
 def print_snippet(snippet):
 	try:
@@ -80,7 +75,6 @@ def print_snippet(snippet):
 	y,x = stdscr.getyx()
 	return y,x
 
-##########################################################################################
 
 def main():
 	stdscr.clear()
@@ -90,7 +84,6 @@ def main():
 	y,x = print_snippet(snippet)
 	typing(snippet,y,x)
 
-##########################################################################################
 
 if __name__ == "__main__":
 	stdscr = curses.initscr()
