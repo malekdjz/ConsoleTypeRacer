@@ -9,24 +9,35 @@ def compare_char(snippet,index):
 	except:
 		print("Something went wrong ")
 	else :
-		char = str(stdscr.getch())
-		if char == str(snippet[index]):
-			return True
-		if char == "27":
+		char = stdscr.getch()
+		if str(char) == str(snippet[index]):
+			return True,char
+		if str(char) == "27":
 			quit()
 		else:
-			return False
+			return False,char
+
 ##########################################################################################
 
-def typing(snippet):
+def typing(snippet,y,x):
 	curses.noecho()
+	stdscr.move(0,0)
+	curses.init_pair(1,curses.COLOR_GREEN,curses.COLOR_BLACK)
 	index = 0
 	for char in snippet:
 		while True :
-			test = compare_char(snippet, index)
+			test,c = compare_char(snippet, index)
 			if test:
+				stdscr.addch(chr(c),curses.color_pair(1))
+				stdscr.refresh()
 				index = index +1
+				curr_y,curr_x = stdscr.getyx()
+				stdscr.addstr(y+2,x,str(index))
+				stdscr.move(curr_y,curr_x)
 				break
+
+##########################################################################################
+
 
 ##########################################################################################
 
@@ -51,13 +62,14 @@ def open_json(lang):
 
 def print_snippet(snippet):
 	try:
-		for char in snippet:
-			stdscr.addch(str(char))
-			stdscr.refresh()
+		stdscr.addstr(str(snippet))
+		stdscr.refresh()
 	except:
 		print("The console needs to be bigger")
 		quit()
 	stdscr.addch('\n')
+	y,x = stdscr.getyx()
+	return y,x
 
 ##########################################################################################
 
@@ -65,11 +77,12 @@ def main():
 	stdscr.clear()
 	json_string = open_json("python")
 	snippet = random_snippet(json_string)
-	print_snippet(snippet)
-	typing(snippet)
+	y,x = print_snippet(snippet)
+	typing(snippet,y,x)
 
 ##########################################################################################
 
 if __name__ == "__main__":
 	stdscr = curses.initscr()
+	curses.start_color()
 	main()

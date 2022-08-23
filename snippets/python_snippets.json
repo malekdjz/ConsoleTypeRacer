@@ -8,7 +8,6 @@
     "from datetime import datetime, timedelta\n\nyesterday = datetime.today() - timedelta(days = 1 )",
     "import random\nlines = open('file.txt').read().splitlines() # creates a list with one line per item\nrandomLine =random.choice(lines) # pick up a random item in this list",
     "import os\nfilePath = '/home/somedir/Documents/python/logs'\n\nif os.path.exists(filePath):\n    os.remove(filePath)\nelse:\n    print(\"Can not delete the file as it doesn't exists\")",
-    "try:\n    raise NotImplementedError(\"Not implemented\")\nexcept Exception as e:\n    exception_type, exception_object, exception_traceback = sys.exc_info()\n    filename = exception_traceback.tb_frame.f_code.co_filename\n    line_number = exception_traceback.tb_lineno\n\n    print(\"Exception type: \", exception_type)\n    print(\"File name: \", filename)\n    print(\"Line number: \", line_number)",
     "from datetime import datetime, timedelta\n>>> datetime.strftime(datetime.now() - timedelta(1), '%Y-%m-%d')\n'2015-05-26'",
     "import concurrent.futures\nimport tqdm\n\nwork_list = list(range(2**15))\n\n\ndef calc(x):\n    return x ** x\n\n\nwith concurrent.futures.ProcessPoolExecutor() as executor:\n    results = list(tqdm.tqdm(executor.map(calc, work_list), total=len(work_list)))\n\nprint(results[0:16])",
     "import datetime\nnow = datetime.datetime.now().year\nprint(now)",
