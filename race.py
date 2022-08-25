@@ -10,9 +10,9 @@ def compare_char(snippet,index):
 		return False,False
 	else :
 		char = stdscr.getch()
-		if str(char) == str(snippet[index]):
+		if char == snippet[index]:
 			return True,char
-		if str(char) == "27":
+		if char == 27:
 			quit()
 		else:
 			return False,False
@@ -35,10 +35,12 @@ def typing(snippet,y,x):
 				index = index +1
 				if index > 0:
 					cpm = char_counter(t,index)
+					cpm = round(cpm,1)
 					stdscr.addstr(y+2,x,"Characters per second : "+str(cpm))
 					stdscr.move(curr_y,curr_x)
 				stdscr.refresh()
 				break
+	return cpm
 
 
 def char_counter(t,index):
@@ -75,14 +77,41 @@ def print_snippet(snippet):
 	y,x = stdscr.getyx()
 	return y,x
 
-
+def menu():
+	stdscr.addstr("Choose a language : \n1)Python\n2)C++\nPress any other key to exit.")
+	input = stdscr.getch()
+	if input == 49:
+		stdscr.clear()
+		return "python"
+	elif input == 50:
+		stdscr.clear()
+		return "cpp"
+	else:
+		exit()
 def main():
 	stdscr.clear()
-	stdscr.addstr("**Press ESC to quite**")
-	json_string = open_json("python")
-	snippet = random_snippet(json_string)
-	y,x = print_snippet(snippet)
-	typing(snippet,y,x)
+	lang = menu()
+	while True:
+		stdscr.clear()
+		stdscr.addstr("**Press ESC to quite**")
+		json_string = open_json(lang)
+		snippet = random_snippet(json_string)
+		y,x = print_snippet(snippet)
+		cpm = typing(snippet,y,x)
+		stdscr.clear()
+		stdscr.addstr("Your score is : "+str(cpm)+" character per second\nPress 'r' to play again\Press any key to exit")
+		while True:
+			restart = stdscr.getch()
+			if restart == 114:
+				restart = True
+				break
+			elif restart == 27:
+				restart = False
+				break
+		if not restart:
+			break
+			
+
 
 
 if __name__ == "__main__":

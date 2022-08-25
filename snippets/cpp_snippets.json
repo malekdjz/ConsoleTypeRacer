@@ -7,7 +7,6 @@
     "#include <iostream>\n#include <chrono>\n\nint main() {\n\tauto start = std::chrono::high_resolution_clock::now();\n\t// operation to be timed ...\n\tauto finish = std::chrono::high_resolution_clock::now();\n\tauto time_in_nanoseconds =  std::chrono::duration_cast<std::chrono::nanoseconds>(finish-start).count();\n}\n",
     "#include <string>\n#include <iostream>\n#include <filesystem>\nnamespace fs = std::filesystem;\n\nint main()\n{\n\tstd::string path = \"/path/to/directory\";\n\tfor (const auto & entry : fs::directory_iterator(path))\n\t\tstd::cout << entry.path() << std::endl;\n}\n",
     "#include <algorithm> // max_element\n#include <vector> \n#include <iostream> // cout \nusing namespace std;\nint main(){\n  vector<int> v1{ 10, 20, 30, 40, 50, 25, 15 };\n  cout << *max_element(v1.begin(), v1.end());\n}",
-    "#include<iostreme>\nusing namespace std;\nint main(){\n  cout<<\"Hello World!\";\n  return 0;\n}",
     "#include<iostream>\nusing namespace std;\n\nint main(){\n \n  cout << \"Hello World\" << endl;\n  \n  return 0;\n}",
     "std::wstring s2ws(const std::string& s)\n{\n\tint len;\n\tint slength = (int)s.length() + 1;\n\tlen = MultiByteToWideChar(CP_ACP, 0, s.c_str(), slength, 0, 0);\n\twchar_t* buf = new wchar_t[len];\n\tMultiByteToWideChar(CP_ACP, 0, s.c_str(), slength, buf, len);\n\tstd::wstring r(buf);\n\tdelete[] buf;\n\treturn r;\n}\n",
     "int ***arr = new int**[X];\nfor (i = 0; i < z_size; ++i) {\n  arr[i] = new int*[Y];\n  for (j = 0; j < WIDTH; ++j)\n\tarr[i][j] = new int[Z];\n}",
