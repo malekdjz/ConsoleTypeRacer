@@ -1,0 +1,21 @@
+[
+    "DB::enableQueryLog();\n$arr_user = DB::table('users')->select('name', 'email as user_email')->get();\ndd(DB::getQueryLog());",
+    "<?php\n  $writer = new \\Zend\\Log\\Writer\\Stream(BP . '/var/log/MYLOGFILE.log');\n  $logger = new \\Zend\\Log\\Logger();\n  $logger->addWriter($writer);\n  $logger->info('Your text message');\n?>",
+    "<?php\n\nnamespace App;\n\nuse Illuminate\\Database\\Eloquent\\Model;\n\nclass Post extends Model\n{\n\tpublic $timestamps = false;\n\n\t//\n}",
+    "$path\t= './';\n$files = scandir($path);\n$files = array_diff(scandir($path), array('.', '..'));\nforeach($files as $file){\n  echo \"<a href='$file'>$file</a>\";\n}",
+    "session_start();\n\n// STORE OBJECT\n$object = new sample_object();\n$_SESSION['sample'] = serialize($object);\n\n// RETRIEVE OPBJECT\n$object = unserialize($_SESSION['sample']);",
+    "<?php\n$directory = \"./videos/category/\";\nif (!file_exists($directory)) {\n  mkdir($directory, 0777, true);\n}\n?>",
+    "if(curl_exec($ch) === false)\n{\n\techo 'Curl error: ' . curl_error($ch);\n}\nelse\n{\n\techo 'Operation completed without any errors';\n}",
+    "<?php\n$filename\u00a0=\u00a0'/path/to/foo.txt';\n\nif\u00a0(file_exists($filename))\u00a0{\n\u00a0\u00a0\u00a0\u00a0echo\u00a0\"The\u00a0file\u00a0$filename\u00a0exists\";\n}\u00a0else\u00a0{\n\u00a0\u00a0\u00a0\u00a0echo\u00a0\"The\u00a0file\u00a0$filename\u00a0does\u00a0not\u00a0exist\";\n}\n?>",
+    "if ( is_front_page() ) :\n\tget_header( 'front' );\nelse :\n\tget_header();\nendif;",
+    "$now = Carbon::now();\n$startOfMonth = $now->startOfMonth('Y-m-d');\n$endOfMonth = $now->endOfMonth()->format('Y-m-d');",
+    "$this->db->from($this->table_name);\n$this->db->order_by(\"name\", \"asc\");\n$query = $this->db->get(); \nreturn $query->result();",
+    "<?php\n$email_a = 'joe@example.com';\n$email_b = 'bogus';\n\nif (filter_var($email_a, FILTER_VALIDATE_EMAIL)) {\n\techo \" $email_a is valid email.\";\n}\nif (filter_var($email_b, FILTER_VALIDATE_EMAIL)) {\n\techo \" '$email_b' is valid email.\";\n} else {\n\techo \"$email_b ooops NOT VALID try again\";\n}\n?>",
+    "$stmt = $db->prepare(\"...\");\n$stmt->execute();\n$id = $db->lastInsertId();",
+    "DB::enableQueryLog();\n$users = User::select(\"*\")->get();\n$quries = DB::getQueryLog();\ndd($quries);\nDB::table('users')->toSql();\ndd($query);",
+    "<?php\n\u00a0 \u00a0$email = \"pattrick@tutorialspoint.com\";\n\u00a0 \u00a0// Validate email\n\u00a0 \u00a0if (filter_var($email, FILTER_VALIDATE_EMAIL)) {\n\u00a0 \u00a0 \u00a0 echo(\"$email is a valid email address\");\n\u00a0 \u00a0}\n\u00a0 \u00a0else{\n\u00a0 \u00a0 \u00a0 echo(\"$email is not a valid email address\");\n\u00a0 \u00a0}\n?>",
+    "$file = fopen('file.csv', 'r');\nwhile (($line = fgetcsv($file)) !== FALSE) {\n   print_r($line);\n}\nfclose($file);",
+    "if (!isset($_COOKIE[\"lg\"])) {\n\tsetcookie(\"lg\", \"ro\");\n}",
+    "$context = stream_context_create(\n\tarray(\n\t\t'http' => array(\n\t\t\t'follow_location' => true/false\n\t\t)\n\t)\n);\n\n$html = file_get_contents('http://www.example.com/', false, $context);\n\nvar_dump($http_response_header);\n",
+    "public function store(Request $request)\n{\n\t$data = $request->all();\n\t$data['hostname'] = gethostbyaddr($_SERVER['REMOTE_ADDR'];\n\n\tSystems::create($data);\n}\n"
+]
