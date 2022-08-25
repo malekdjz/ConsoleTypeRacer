@@ -33,6 +33,7 @@ def choose_snippets(lang):
 			print(answer)
 			choice = input("Save the sippet? y/n press f to finish (the json is NOT saved unless you finish): ")
 			if choice == "y":
+				answer = answer.replace("    ","\t")
 				snippet_list.append(answer)
 			if choice == "f":
 				save_snippet(lang,snippet_list)
