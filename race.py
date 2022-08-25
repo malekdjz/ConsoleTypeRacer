@@ -78,16 +78,20 @@ def print_snippet(snippet):
 	return y,x
 
 def menu():
-	stdscr.addstr("Choose a language : \n1)Python\n2)C++\nPress any other key to exit.")
+	stdscr.addstr("Choose a language : \n1)Python\n2)C++\n3)Java\nPress any other key to exit.")
 	input = stdscr.getch()
-	if input == 49:
-		stdscr.clear()
-		return "python"
-	elif input == 50:
-		stdscr.clear()
-		return "cpp"
-	else:
-		exit()
+	match input:
+		case 49:
+			stdscr.clear()
+			return "python"
+		case 50:
+			stdscr.clear()
+			return "cpp"
+		case 51:
+			stdscr.clear()
+			return "java"
+		case other:
+			exit()
 def main():
 	stdscr.clear()
 	lang = menu()
@@ -99,7 +103,7 @@ def main():
 		y,x = print_snippet(snippet)
 		cpm = typing(snippet,y,x)
 		stdscr.clear()
-		stdscr.addstr("Your score is : "+str(cpm)+" character per second\nPress 'r' to play again\Press any key to exit")
+		stdscr.addstr("Your score is : "+str(cpm)+" character per second\n\nPress 'r' to play again\nPress any key to exit")
 		while True:
 			restart = stdscr.getch()
 			if restart == 114:
