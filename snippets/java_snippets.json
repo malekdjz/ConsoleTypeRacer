@@ -1,5 +1,21 @@
 [
-    "Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();\n\n// the screen height\nscreenSize.getHeight();\n\n// the screen width\nscreenSize.getWidth();",
-    "--module-path /path/to/javafx-sdk-15.0.1/lib --add-modules javafx.controls,javafx.fxml",
-    "//Add this to app manifest\n<uses-permission android:name=\"android.permission.INTERNET\" />"
+    "import java.util.*;\npublic static void main(string args){\nJFrame frame = new JFrame();\nframe.setSize(200,200); // Where you set size\nframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);\nframe.setVisible(true);\n}",
+    "Calendar c = Calendar.getInstance();\nSimpleDateFormat sdf = new SimpleDateFormat(\"yyyy-MM-dd HH:mm:ss\");\nString strDate = sdf.format(c.getTime());\nLog.d(\"Date\",\"DATE : \" + strDate)",
+    "import javax.swing.JFrame;\n\npublic class example {\n  public static void main(String[] args){\n\tJFrame frame = new JFrame();\n\tframe.setSize(100,100);\n\tframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOES);\n\tframe.setTitle(\"Example Frame\");\n\tframe.setVisible(true);\n  }\n}",
+    "void playSound(String soundFile) {\n\tFile f = new File(\"./\" + soundFile);\n\tAudioInputStream audioIn = AudioSystem.getAudioInputStream(f.toURI().toURL());  \n\tClip clip = AudioSystem.getClip();\n\tclip.open(audioIn);\n\tclip.start();\n}\n",
+    "public static int log2(int x)\n{\n\u00a0\u00a0\u00a0\u00a0return (int) (Math.log(x) / Math.log(2));\n}\n",
+    "Jframe frame = new Jframe();\nint count = 0;\nif(count==10){\n  frame.setVisable(false);\n  frame.dispose();\n}",
+    "import javax.swing.*; \n\npublic class jsframe {  \n  public static void main(String[] args) {\n\t  JFrame frame = new JFrame(\"Insert Title\"); // Create frame\n\t  frame.setSize(800, 600); // Window resolution, can be changed\n\n\t  frame.setVisible(true); // Show frame\n  }  \n}  ",
+    "public String readFile(String filePath) {\n\tString result = \"\";\n\ttry {\n\t\tresult = Files.readString(Paths.get(filePath));\n\t} catch (IOException e) {\n\t\te.printStackTrace();\n\t}\n\treturn result;\n}",
+    "public class Main {\n\n  public static void main(String[] args) {\n  \tSystem.out.println(\"Hello, World!\"); \n  }\n  \n}",
+    "import java.text.SimpleDateFormat;  \nimport java.util.Date;  \npublic class StringToDateExample1 {  \npublic static void main(String[] args)throws Exception {  \n\tString sDate1=\"31/12/1998\";  \n\tDate date1=new SimpleDateFormat(\"dd/MM/yyyy\").parse(sDate1);  \n\tSystem.out.println(sDate1+\"\\t\"+date1);  \n}  \n}  ",
+    "import java.util.Random;\n\npublic class RandomStringFromArray\n{\t\n  \tpublic static void main(String[] args)\t\n\t{\t\t\n\t  \tString[] arr={\"1\", \"2\", \"3\", \"4\", \"5\"};\n\t  \tRandom r=new Random();\t\t\n\t  \tint randomNumber=r.nextInt(arr.length);\n\t  \tSystem.out.println(arr[randomNumber]);\n\t}\n}",
+    "final Handler handler = new Handler();\nhandler.postDelayed(new Runnable() {\n  @Override\n  public void run() {\n\t//Do something after 100ms\n  }\n}, 100);",
+    "items.forEach(item->{\n\tSystem.out.println(item);\n\tSystem.out.println(item.toLowerCase());\n  }\n});",
+    "import java.util.concurrent.locks.ReentrantLock;\n\npublic class test{\n  public static void main(String[] args)\n  {\n\tReentrantLock lock = new ReentrantLock();\n\t\n\tlock.lock();\n\ttry{\n\t  System.out.println(\"Only one thread can write this at a time\");\n\t}finally{\n\t  lock.unlock();\n\t}\n  }\n}",
+    "for (Map.Entry<String, Object> entry : objects.entrySet()) {\n\tString key = entry.getKey();\n\tObject val = entry.getValue();\n}\n",
+    "import java.util.Random;\n\nRandom rand = new Random();\nint random_integer = rand.nextInt(upperbound-lowerbound) + lowerbound;",
+    "final long startTime = System.currentTimeMillis();\nfor (int i = 0; i < length; i++) {\n  // Do something\n}\nfinal long endTime = System.currentTimeMillis();\n\nSystem.out.println(\"Total execution time: \" + (endTime - startTime));",
+    "package com.tutorialspoint;\n\nimport java.lang.*;\n\npublic class SystemDemo {\n\n   public static void main(String[] args) {\n\n\t  // returns the current time in milliseconds\n\t  System.out.print(\"Current Time in milliseconds = \");\n\t  System.out.println(System.currentTimeMillis());\n   }\n} ",
+    "public static boolean isParsable(String input) {\n\ttry {\n\t\tInteger.parseInt(input);\n\t\treturn true;\n\t} catch (final NumberFormatException e) {\n\t\treturn false;\n\t}\n}"
 ]
