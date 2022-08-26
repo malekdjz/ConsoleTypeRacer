@@ -36,11 +36,19 @@ def typing(snippet,y,x):
 				if index > 0:
 					cpm = char_counter(t,index)
 					cpm = round(cpm,1)
-					stdscr.addstr(y+2,x,"Characters per second : "+str(cpm))
-					stdscr.move(curr_y,curr_x)
+				progress_bar(index,snippet,cpm,y,x,curr_y,curr_x)
 				stdscr.refresh()
 				break
 	return cpm
+
+def progress_bar(index,snippet,cpm,y,x,curr_y,curr_x):
+	snippet = len(snippet)
+	progress = round(index*30/(snippet))
+	stdscr.addstr(y+2,x,"Characters per second : "+str(cpm))
+	stdscr.addch(y+3,x,'[')
+	stdscr.addch(y+3,x+31,']')
+	stdscr.addch(y+3,progress,'=')
+	stdscr.move(curr_y,curr_x)
 
 
 def char_counter(t,index):
@@ -67,12 +75,8 @@ def open_json(lang):
 
 
 def print_snippet(snippet):
-	try:
-		stdscr.addstr(2,0,str(snippet))
-		stdscr.refresh()
-	except:
-		print("The console needs to be bigger")
-		quit()
+	stdscr.addstr(2,0,str(snippet))
+	stdscr.refresh()
 	stdscr.addch('\n')
 	y,x = stdscr.getyx()
 	return y,x
@@ -95,6 +99,8 @@ def menu():
 			return "php"
 		case other:
 			exit()
+
+
 def main():
 	stdscr.clear()
 	lang = menu()
@@ -106,7 +112,7 @@ def main():
 		y,x = print_snippet(snippet)
 		cpm = typing(snippet,y,x)
 		stdscr.clear()
-		stdscr.addstr("Your score is : "+str(cpm)+" character per second\n\nPress 'r' to play again\nPress any key to exit")
+		stdscr.addstr("Your score is : "+str(cpm)+" character per second\n\nPress 'r' to play again\nPress ESC to exit")
 		while True:
 			restart = stdscr.getch()
 			if restart == 114:
@@ -119,9 +125,10 @@ def main():
 			break
 			
 
-
-
 if __name__ == "__main__":
 	stdscr = curses.initscr()
-	curses.start_color()
-	main()
+	if curses.LINES < 20 and curses.COLS < 40:
+		print("Please resize the console to atleast 20 Lines and 40 Colums")
+	else:
+		curses.start_color()
+		main()
