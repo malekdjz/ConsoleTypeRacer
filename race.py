@@ -127,7 +127,7 @@ def main():
 
 if __name__ == "__main__":
 	stdscr = curses.initscr()
-	if curses.LINES < 20 and curses.COLS < 40:
+	if curses.LINES < 20 or curses.COLS < 40:
 		print("Please resize the console to atleast 20 Lines and 40 Colums")
 	else:
 		curses.start_color()
