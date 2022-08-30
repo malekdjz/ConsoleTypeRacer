@@ -2,6 +2,7 @@ import curses
 import json
 import random
 import time
+from pyfiglet import Figlet
 def compare_char(snippet,index):
 	try:
 		snippet = snippet.encode("ascii")
@@ -82,6 +83,9 @@ def print_snippet(snippet):
 	return y,x
 
 def menu():
+	f = Figlet(font = "doom")
+	stdscr.addstr(f.renderText("CTRacer"))
+	stdscr.addch("\n")
 	stdscr.addstr("Choose a language : \n1)Python\n2)C++\n3)Java\n4)PHP\n5)ruby\nPress any other key to exit.")
 	input = stdscr.getch()
 	match input:
