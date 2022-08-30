@@ -1,0 +1,17 @@
+[
+    "ActionMailer::Base.mail(\n  from: \"test@example.co\", \n  to: \"valid.recipient@domain.com\", \n  subject: \"Test\", \n  body: \"Test\"\n).deliver_now\n",
+    "rails g migration DropProducts\n\nclass DropProducts < ActiveRecord::Migration\n  def change\n\tdrop_table :products\n  end\nend",
+    "puts Benchmark.measure {\n  50_000.times do\n\tinput.map { |key, value| [key.to_sym, value] }.to_h\n  end\n}",
+    "create_table :repo_subscriptions, if_not_exists: true do |t|\n  t.string\t  :user_name\n  t.string\t  :repo_name\n  t.timestamps\nend\n",
+    "require \"tempfile\"\n\n# Creates a file and returns the file object.\nfile = Tempfile.new \"\"\nfile << \"Hello, World!\"\nfile.close",
+    "class Animals\n  attr_accessor :name, :color, :age \nend",
+    "start_regex = /data:image\\/[a-z]{3,4};base64,/\nfilename ||= SecureRandom.hex\n\nregex_result = start_regex.match(base64_data)\nif base64_data && regex_result\n  start = regex_result.to_s\n  tempfile = Tempfile.new(filename)\n  tempfile.binmode\n  tempfile.write(Base64.decode64(base64_data[start.length..-1]))\nend",
+    "if Rails.env.production?\n  puts \"production: #{ENV['REDIS_URL']}\"\n  uri = URI.parse(ENV[\"REDIS_URL\"])\nelse\n  puts \"not production\"\n  uri = URI.parse(\"redis://localhost:6379\")\nend",
+    "rails generate migration rename_title_to_name_in_tasks\n\nclass RenameTitleToNameInTasks < ActiveRecord::Migration[6.0]\n  def change\n\trename_column :tasks, :title, :name\n  end\nend\n",
+    "class RegistrationsController < Devise::RegistrationsController\n  protected\n\n  def after_sign_up_path_for(resource)\n\t'/an/example/path' # Or :prefix_to_your_route\n  end\nend",
+    "my_string = \"abcdefg\"\nif my_string.include? \"cde\"\n   puts \"String includes 'cde'\"\nend\n",
+    "class MigrationName < ActiveRecord::Migration\n\tdef change\n\t\tchange_column :my_table, :my_column, :data_type, deafult: \"value\"\n\tend\nend",
+    "rails generate migration AddUser_idColumnToTable user_id:string. \n\nclass AddIndexToTable < ActiveRecord::Migration\n  def change\n\tadd_index :table, :user_id\n  end\nend",
+    "// dont do a foreing_key, instead use t.references\nclass CreateDocumentImages < ActiveRecord::Migration[5.1]\n  def change\n\tcreate_table :document_images do |t|\n\t  t.references :document, foreign_key: { on_delete: :cascade }\n\t  t.references :image, foreign_key: { on_delete: :cascade}\n\t  t.timestamps\n\tend\n  end\nend",
+    "begin\n  raise 'This exception will be rescued!'\nrescue StandardError => e\n  puts \"Rescued: #{e.inspect}\"\nend"
+]
