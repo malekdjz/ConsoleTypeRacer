@@ -82,7 +82,7 @@ def print_snippet(snippet):
 	return y,x
 
 def menu():
-	stdscr.addstr("Choose a language : \n1)Python\n2)C++\n3)Java\n4)PHP\nPress any other key to exit.")
+	stdscr.addstr("Choose a language : \n1)Python\n2)C++\n3)Java\n4)PHP\n5)ruby\nPress any other key to exit.")
 	input = stdscr.getch()
 	match input:
 		case 49:
@@ -97,6 +97,9 @@ def menu():
 		case 52:
 			stdscr.clear()
 			return "php"
+		case 53:
+			stdscr.clear()
+			return "ruby"
 		case other:
 			exit()
 
