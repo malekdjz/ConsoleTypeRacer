@@ -23,7 +23,11 @@ def get_snippet(line):
 	
 def choose_snippets(lang):
 	requests.packages.urllib3.disable_warnings()
-	f = open("lists/"+lang+"_list.txt","r",encoding="utf-8")
+	try:
+		f = open("lists/"+lang+"_list.txt","r",encoding="utf-8")
+	except:
+		print("The list for %s file doesn't exists."%(lang))
+		exit()
 	lines = f.readlines()
 	snippet_list = []
 	for line in lines:
@@ -31,7 +35,7 @@ def choose_snippets(lang):
 		if (answer["answers"]):
 			answer = answer["answers"][0]["answer"]
 			print(answer)
-			choice = input("Save the sippet? y/n press f to finish (the json is NOT saved unless you finish): ")
+			choice = input("Save the sippet? y/n press f to finish (the json is NOT saved unless you finish AND is overwritten): ")
 			if choice == "y":
 				answer = answer.replace("    ","\t")
 				snippet_list.append(answer)
@@ -47,11 +51,6 @@ def save_snippet(lang,snippets):
 	snippets = json.dumps(snippets,indent=4)
 	f.write(snippets)
 	f.close()
-
-def read_json():
-	f = open("sample.json","r")
-	data = json.load(f)
-	print(data["samples"][0])
 
 def main():
 	lang = input("Choose a language : ")
